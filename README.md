@@ -15,6 +15,6 @@
 * 💾 Learning Database everyday, Distributed Systems is difficult and charming.
 * 📖 Interested in backend, plan to become a full stack and studying frontend skill.
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=si1kdd&hide=html)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=si1kdd&count_private=true)
 
-<!-- ![si1kdd's github stats](https://github-readme-stats.vercel.app/api?username=si1kdd&show_icons=true&count_private=true&line_height=50) --!>
+<!-- ![si1kdd's github stats](https://github-readme-stats.vercel.app/api?username=si1kdd&show_icons=true&count_private=true&line_height=30) --!>
