@@ -9,19 +9,24 @@ README_FILE=""
 # Do file reading here.
 
 def fetch_pictures():
-    print('[*] Step 1')
     content = httpx.get(URL).content
-    # print(content)
     html = fromstring(clean_html(content))
     img_src_parm = html.xpath("//a")[1].get("href")
-    print(f"{URL}{img_src_parm}")
-    img_credit_text = html.xpath("//b")[1]
-    img_credit_name = html.xpath("//a")[2]
-    credit_str = str(img_credit_text.text + img_credit_name.text).strip()
-    print(credit_str)
+    url = URL + str(img_src_parm).strip()
+
+    pic_xpath = html.xpath("//center[2]//b")[0]
+
+    # img_credit_text = html.xpath("//b")[1]
+    # img_credit_name = html.xpath("//a")[2]
+    # credit_str = str(img_credit_text.text).strip() + str(img_credit_name.text).strip()
+
+    pic_name = str(pic_xpath.text).strip()
+    return url, pic_name
 
 
-fetch_pictures()
+url, credit = fetch_pictures()
+print(url)
+print(credit)
 
 
 # Do file output here.
